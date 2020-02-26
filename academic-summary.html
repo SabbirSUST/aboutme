@@ -23,8 +23,45 @@
         <![endif]-->
     <!-- header-start -->
     <div class="container">
-        <!-- header-start -->
-        <div id="headernav"></div>
+        <header>
+
+            <nav class="navbar navbar-fixed-top animated slideInDown navbar-expand-lg navbar-light bg-light">
+
+                <a class="navbar-brand" href="#">Mohammed Sabbir</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Home </a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="academicDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Academic <span class="sr-only">(current)</span></a>
+                            <div class="dropdown-menu" aria-labelledby="academicDropdown">
+                                <a class="dropdown-item" href="academic-summary.html">Summary</a>
+                                <a class="dropdown-item" href="#">Undergraduate Studies</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Projects
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <!--<div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>-->
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Rewards</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
         <main class="site-content">
             <div class="container site-info">
                 <div class="row">
@@ -57,18 +94,79 @@
             </div>
         </main>
         <!-- footer start -->
-        <div id="footernav"></div>
+        <footer class="footer">
+            <div class="footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-md-3 col-lg-2">
+                            <div class="footer_widget">
+                                <div class="logo_footer">
+                                    <a href="index.html">
+                                        <img src="img/banner/sabbir.jpg" alt="" width="200" height="240">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-lg-3">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                    Links
+                                </h3>
+                                <ul>
+                                    <li><a href="#">About Me</a></li>
+                                    <li><a href="#">Projects</a></li>
+                                    <li><a href="#">Machine Learning</a></li>
+                                    <li><a href="#">Blogs</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-lg-3">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                    Others
+                                </h3>
+                                <ul>
+                                    <li><a href="#">Link</a></li>
+                                    <li><a href="#">Link</a></li>
+                                    <li><a href="#">Link</a></li>
+                                    <li><a href="#">Link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-md-6 col-lg-2">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                    Follow Me
+                                </h3>
+                                <ul>
+                                    <li><a href="https://www.linkedin.com/in/mohammed-sabbir-16164943/" target="_blank">Linkedin</a></li>
+                                    <li><a href="https://www.facebook.com/sabbirmailbox" target="_blank">Facebook</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right_text">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <p class="copy_right">
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> Mohammed Sabbir. All rights reserved
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
     <!--/ footer end  -->
     <!-- JS here -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
-        $(function () {
-            $("#headernav").load("headernav.html");
-            $("#footernav").load("footernav.html");
-        });
-    </script>
 </body>
 
 </html>
